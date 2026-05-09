@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now | BlueWake Adventures</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header / Navigation -->
+    <nav class="navbar-marine navbar navbar-expand-xl">
+        <div class="container-custom d-flex justify-content-between align-items-center w-100">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/bluewake-logo.svg" alt="BlueWake logo" class="brand-logo me-2">
+                <span class="fs-3 fw-bold text-gradient">BLUEWAKE</span>
+            </a>
+
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar">
+                <i class="bi bi-list fs-1"></i>
+            </button>
+
+            <div class="collapse navbar-collapse d-none d-xl-flex" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="home-2.html">Home 2</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="book-now.html">Book Now</a></li>
+                    <li class="nav-item"><a class="nav-link " href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link " href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link " href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="d-none d-xl-flex align-items-center gap-3 ms-lg-4">
+                <button class="theme-toggle btn btn-link text-white p-0"><i class="bi bi-moon-stars fs-5"></i></button>
+                <button class="rtl-toggle btn btn-outline-light btn-sm px-3">RTL/LTR</button>
+                <a href="login.html" class="btn btn-accent rounded-pill px-4 btn-sm ms-2">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Menu for Mobile -->
+    <div class="offcanvas offcanvas-end glass-panel" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header border-bottom border-secondary">
+            <h5 class="offcanvas-title text-gradient d-flex align-items-center gap-2 mb-0"><img src="assets/images/bluewake-logo.svg" alt="BlueWake logo" class="brand-logo offcanvas-brand-logo"> <span>BLUEWAKE</span></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column h-100">
+            <ul class="navbar-nav mb-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
+                <li class="nav-item"><a class="nav-link active" href="book-now.html">Book Now</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="mt-auto pt-4 border-top border-secondary">
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <span class="small text-muted text-uppercase tracking-widest">Interface</span>
+                    <div class="d-flex gap-3">
+                        <button class="theme-toggle btn btn-link text-white p-0"><i
+                                class="bi bi-moon-stars fs-5"></i></button>
+                        <button class="rtl-toggle btn btn-outline-light btn-sm px-3">RTL/LTR</button>
+                    </div>
+                </div>
+                <a class="btn btn-accent w-100 rounded-pill" href="login.html">Login Terminal</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="parallax-bg text-center"
+        style="background-image: url('https://thumbs.dreamstime.com/b/beautiful-woman-girl-fishing-rod-trolling-boat-saltwater-55492218.jpg');">
+        <div class="container-custom z-1 reveal">
+            <h1 class="display-1 fw-bold text-white mb-4">Secure Your <span class='text-accent'>Spot.</span></h1>
+            <p class="lead text-white-50 mb-5 mx-auto col-lg-6">Elite availability is strictly limited. Submit your
+                expedition inquiry below.</p>
+            <div class="d-flex flex-wrap justify-content-center gap-3 gap-md-4 reveal reveal-up delay-2 mt-5">
+                <a href="#booking-form" class="btn-marine rounded-pill">Open Inquiry Form</a>
+                <a href="pricing.html" class="btn btn-outline-light rounded-pill">View Packages</a>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center gap-5 mt-5 reveal reveal-up delay-3 opacity-75">
+                <div class="text-center">
+                    <i class="bi bi-calendar-check text-accent fs-4"></i>
+                    <div class="small text-white mt-1 uppercase font-monospace">MAY SLOTS OPEN</div>
+                </div>
+                <div class="text-center">
+                    <i class="bi bi-person-check text-accent fs-4"></i>
+                    <div class="small text-white mt-1 uppercase font-monospace">INDIVIDUAL/GROUP</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 1 -->
+    <section class="py-5" style="margin-top: -40px; position:relative; z-index:2;">
+        <div class="container-custom reveal">
+            <div class="glass-panel p-5 mx-auto hover-tilt border-accent" style="max-width: 900px;">
+                <h3 class="mb-4">Reservation Inquiry</h3>
+                <form class="row g-4">
+                    <div class="col-md-6">
+                        <label class="form-label small text-muted">FIRST NAME</label>
+                        <input type="text" class="form-control bg-transparent border-secondary p-3">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label small text-muted">LAST NAME</label>
+                        <input type="text" class="form-control bg-transparent border-secondary p-3">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label small text-muted">DATE</label>
+                        <input type="date" class="form-control bg-transparent border-secondary text-muted p-3">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label small text-muted">EXPEDITION</label>
+                        <select class="form-control bg-transparent border-secondary text-muted p-3">
+                            <option value="solo" class="text-dark">Solo Quest</option>
+                            <option value="duo" class="text-dark">Duo Adventure</option>
+                            <option value="vip" class="text-dark">VIP Elite</option>
+                        </select>
+                    </div>
+                    <div class="col-12 text-center mt-5">
+                        <button type="button" class="btn-marine px-5 py-3 w-100">CONFIRM INQUIRY</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="py-5 mt-4">
+        <div class="container-custom reveal">
+            <h2 class="mb-5 text-center">Booking <span class="text-accent">Protocol.</span></h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="glass-panel p-4 h-100 hover-tilt">
+                        <h1 class="text-stroke display-1">01</h1>
+                        <h5>Request Dates</h5>
+                        <p class="text-muted small">Submit your ideal window.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-panel p-4 h-100 border-accent hover-tilt">
+                        <h1 class="text-stroke display-1 text-accent">02</h1>
+                        <h5>Consultation</h5>
+                        <p class="text-muted small">We coordinate tide constraints.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-panel p-4 h-100 hover-tilt">
+                        <h1 class="text-stroke display-1">03</h1>
+                        <h5>Launch</h5>
+                        <p class="text-muted small">Meet at the docks before sunrise.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weather & Cancellation: Recreated -->
+    <section class="section-padding bg-tech overflow-hidden">
+        <div class="container-custom">
+            <div class="glass-panel p-5 border-accent">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <h2 class="display-4 mb-4">Weather & <span class="text-accent underline">Policy.</span></h2>
+                        <p class="lead text-muted mb-5">The ocean dictates our schedule. We prioritize your safety and
+                            the quality of the catch above all else.</p>
+
+                        <div class="row g-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="bi bi-shield-check text-accent fs-3"></i>
+                                    <div class="fw-bold">100% REFUND</div>
+                                </div>
+                                <p class="small text-muted mt-2">Guaranteed refund for weather cancellations.</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="bi bi-arrow-repeat text-accent fs-3"></i>
+                                    <div class="fw-bold">RE-BOOKING</div>
+                                </div>
+                                <p class="small text-muted mt-2">First priority on the next clear window.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-4 bg-dark rounded-4 shadow-lg text-center position-relative">
+                            <i class="bi bi-cloud-lightning-rain display-1 text-accent opacity-25"></i>
+                            <div class="mt-4">
+                                <h4 class="text-white">Safety Protocols</h4>
+                                <p class="text-muted small">Trips are deferred if winds exceed 15kts or lightning is
+                                    detected within 5 miles.</p>
+                            </div>
+                            <!-- Subtle tech glitch decorative element -->
+                            <div class="tech-glitch opacity-10 position-absolute top-0 end-0 p-3 small font-monospace">
+                                RADAR_ACTIVE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="py-5 mb-5">
+        <div class="container-custom text-center reveal">
+            <p class="lead text-muted">Questions about gear capabilities or accessibility?</p>
+            <a href="contact.html" class="btn btn-outline-light rounded-pill px-4 mt-3">Visit our FAQ / Contact</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-custom">
+            <div class="row">
+                <div class="col-lg-4 mb-5 reveal reveal-up">
+                    <h3 class="text-gradient mb-4 d-flex align-items-center gap-2"><img src="assets/images/bluewake-logo.svg" alt="BlueWake logo" class="brand-logo footer-brand-logo"> <span>BLUEWAKE</span></h3>
+                    <p class="text-muted pe-lg-5">Redefining the marine adventure through luxury, technology, and the
+                        raw thrill of the hunt. Join the elite.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href="#" class="fs-4 text-white hover-accent"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="fs-4 text-white hover-accent"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="fs-4 text-white hover-accent"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 reveal reveal-up delay-1">
+                    <h5 class="mb-4">Explore</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="services.html" class="text-muted text-decoration-none">Trip Packages</a></li>
+                        <li><a href="gallery.html" class="text-muted text-decoration-none">Destinations</a></li>
+                        <li><a href="services.html" class="text-muted text-decoration-none">Gear Rental</a></li>
+                        <li><a href="gallery.html" class="text-muted text-decoration-none">Species Guide</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 reveal reveal-up delay-2">
+                    <h5 class="mb-4">Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-muted text-decoration-none">Our Story</a></li>
+                        <li><a href="home-2.html" class="text-muted text-decoration-none">Trip Reports</a></li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none">Support</a></li>
+                        <li><a href="about.html" class="text-muted text-decoration-none">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4 reveal reveal-up delay-3">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <div class="glass-panel p-2 d-flex">
+                        <input type="email" class="form-control bg-transparent border-0 text-white"
+                            placeholder="Email Address">
+                        <button class="btn btn-accent rounded-pill px-4">Join</button>
+                    </div>
+                    <small class="text-muted mt-3 d-block">Monthly reports & gear discounts.</small>
+                </div>
+            </div>
+            <hr class="my-5 border-secondary opacity-25">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-muted mb-0">© 2024 BlueWake Expeditions. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" width="30">
+                    <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" width="30" class="ms-2">
+                    <img src="https://img.icons8.com/color/48/amex.png" alt="Amex" width="30" class="ms-2">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+
