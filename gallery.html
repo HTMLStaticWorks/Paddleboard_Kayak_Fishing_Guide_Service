@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | BlueWake Adventures</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/bluewake-logo.svg">
 
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,13 +18,9 @@
             position: relative;
             border-radius: 28px;
             overflow: hidden;
-            min-height: 240px;
+            aspect-ratio: 4 / 5;
             border: 1px solid var(--glass-border);
             background: #030a12;
-        }
-
-        .trophy-room-section .trophy-room-card-lg {
-            min-height: 520px;
         }
 
         .trophy-room-section .trophy-room-card img {
@@ -52,12 +49,6 @@
             text-transform: uppercase;
             font-size: 0.82rem;
             margin: 0;
-        }
-
-        @media (max-width: 991px) {
-            .trophy-room-section .trophy-room-card-lg {
-                min-height: 380px;
-            }
         }
     </style>
 </head>
@@ -99,7 +90,10 @@
     <!-- Offcanvas Menu for Mobile -->
     <div class="offcanvas offcanvas-end glass-panel" tabindex="-1" id="offcanvasNavbar">
         <div class="offcanvas-header border-bottom border-secondary">
-            <h5 class="offcanvas-title text-gradient d-flex align-items-center gap-2 mb-0"><img src="assets/images/bluewake-logo.svg" alt="BlueWake logo" class="brand-logo offcanvas-brand-logo"> <span>BLUEWAKE</span></h5>
+            <h5 class="offcanvas-title text-gradient d-flex align-items-center gap-2 mb-0"><img
+                    src="assets/images/bluewake-logo.svg" alt="BlueWake logo" class="brand-logo offcanvas-brand-logo">
+                <span>BLUEWAKE</span>
+            </h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body d-flex flex-column h-100">
@@ -115,20 +109,21 @@
 
             <div class="mt-auto pt-4 border-top border-secondary">
                 <div class="d-flex align-items-center justify-content-between mb-4">
-                    <span class="small text-muted text-uppercase tracking-widest">Interface</span>
+                    <span class="small text-muted text-uppercase tracking-widest"></span>
                     <div class="d-flex gap-3">
                         <button class="theme-toggle btn btn-link text-white p-0"><i
                                 class="bi bi-moon-stars fs-5"></i></button>
                         <button class="rtl-toggle btn btn-outline-light btn-sm px-3">RTL/LTR</button>
                     </div>
                 </div>
-                <a class="btn btn-accent w-100 rounded-pill" href="login.html">Login Terminal</a>
+                <a class="btn btn-accent w-100 rounded-pill" href="login.html">Login</a>
             </div>
         </div>
     </div>
 
     <section class="hero-section text-center overflow-hidden">
-        <img src="https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/630/354/75/vision-dam/digital/parks-platform/parks-global-assets/disney-world/enchanted-extras/fishing-excursions/takemefishing_colorpass-05.JPG-1920x1080-16x9.jpg?2025-08-18T17:24:26+00:00" alt="Visual Evidence" class="hero-video-bg">
+        <img src="https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/630/354/75/vision-dam/digital/parks-platform/parks-global-assets/disney-world/enchanted-extras/fishing-excursions/takemefishing_colorpass-05.JPG-1920x1080-16x9.jpg?2025-08-18T17:24:26+00:00"
+            alt="Visual Evidence" class="hero-video-bg">
         <div class="hero-overlay"></div>
         <div class="container-custom z-1">
             <h1 class="display-1 fw-bold text-white mb-4">Visual <span class='text-accent'>Evidence.</span></h1>
@@ -136,7 +131,8 @@
                 got away.</p>
             <div class="d-flex flex-wrap justify-content-center gap-3 gap-md-4 reveal reveal-up delay-2 mt-5">
                 <a href="book-now.html" class="btn-marine rounded-pill">Start Expedition</a>
-                <a href="services.html" class="btn btn-outline-light rounded-pill d-flex align-items-center gap-2">
+                <a href="services.html"
+                    class="btn btn-outline-light rounded-pill d-flex align-items-center gap-2 gallery-watch-story-btn">
                     <i class="bi bi-play-circle fs-4"></i> Watch Story
                 </a>
             </div>
@@ -233,7 +229,7 @@
                     <p class="lead mb-5 opacity-75">We use high-altitude drone scouting to identify bait movement and
                         thermal pockets before we ever launch the fleet.</p>
                     <div class="glass-panel p-4 d-inline-block border-accent">
-                        <span class="fs-4 font-monospace">LAT 28.0836° N | LON 80.6081° W</span>
+                        <span class="fs-4 font-monospace gallery-coords-label">LAT 28.0836° N | LON 80.6081° W</span>
                     </div>
                 </div>
             </div>
@@ -258,7 +254,10 @@
                             <i class="bi bi-gear-wide-connected display-4 text-accent mb-4 d-block"></i>
                             <h4>Tournament Calibration</h4>
                             <p class="text-muted mt-3">Reel drags and rod guides are inspected to specific 0.1mm
-                                tolerances after every expedition.</p>
+                                tolerances after every expedition. Each spool is pressure-tested under load, and line
+                                rollers are aligned to eliminate micro-friction during long runs. Before launch, we
+                                validate casting balance and retrieve consistency to keep every setup competition-ready.
+                            </p>
                         </div>
                         <div class="mt-4 pt-4 border-top border-secondary">
                             <span class="small text-accent fw-bold text-uppercase">Standard: MIL-SPEC 810G</span>
@@ -285,7 +284,10 @@
                             <i class="bi bi-shield-check display-4 text-accent mb-4 d-block"></i>
                             <h4>Hydrophilic Armor</h4>
                             <p class="text-muted mt-3">All carbon components are sealed with high-elasticity saltwater
-                                protection to prevent crystalline corrosion.</p>
+                                protection to prevent crystalline corrosion. Multi-layer coatings are cured for UV
+                                stability, then inspected for seam integrity around guides, joints, and contact points.
+                                This defensive finish extends hardware life and preserves smooth performance across
+                                repeated exposure in tropical saltwater conditions.</p>
                         </div>
                         <div class="mt-4 pt-4 border-top border-secondary">
                             <span class="small text-accent fw-bold text-uppercase">Status: OPTIMAL_SCAN</span>
@@ -300,16 +302,16 @@
     <section class="py-5 bg-card trophy-room-section">
         <div class="container-custom py-5 reveal">
             <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-5">
-                <div>
+                <div class="text-start">
                     <h2 class="mb-2">Trophy <span class="text-accent">Room.</span></h2>
                     <p class="text-muted mb-0">Legend catches, framed with a cleaner showcase layout.</p>
                 </div>
                 <span class="badge rounded-pill bg-accent text-dark px-3 py-2">Hall of Highlights</span>
             </div>
 
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <article class="trophy-room-card trophy-room-card-lg hover-tilt">
+            <div class="row g-4 align-items-stretch">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="trophy-room-card hover-tilt">
                         <img src="https://laketahoetravel.com/wp-content/uploads/w3-webp/uploads/2014/12/Sierra-Fin-Addicts-Guide-Service_2.jpg-595xh.webp"
                             alt="Angler holding a trophy trout">
                         <div class="trophy-room-overlay">
@@ -317,37 +319,32 @@
                         </div>
                     </article>
                 </div>
-
-                <div class="col-lg-6">
-                    <div class="row g-4">
-                        <div class="col-sm-6">
-                            <article class="trophy-room-card hover-tilt">
-                                <img src="https://images.unsplash.com/photo-1510006851064-e6056cd0e3a8?q=80&w=900"
-                                    alt="Kayak fishing on open water">
-                                <div class="trophy-room-overlay">
-                                    <p class="trophy-room-caption">Open Water Drift</p>
-                                </div>
-                            </article>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="trophy-room-card hover-tilt">
+                        <img src="https://images.unsplash.com/photo-1510006851064-e6056cd0e3a8?q=80&w=900"
+                            alt="Kayak fishing on open water">
+                        <div class="trophy-room-overlay">
+                            <p class="trophy-room-caption">Open Water Drift</p>
                         </div>
-                        <div class="col-sm-6">
-                            <article class="trophy-room-card hover-tilt">
-                                <img src="https://images.pexels.com/photos/1143921/pexels-photo-1143921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                    alt="Kayak with fishing rods at sunrise">
-                                <div class="trophy-room-overlay">
-                                    <p class="trophy-room-caption">Sunrise Setup</p>
-                                </div>
-                            </article>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="trophy-room-card hover-tilt">
+                        <img src="https://images.pexels.com/photos/1143921/pexels-photo-1143921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="Kayak with fishing rods at sunrise">
+                        <div class="trophy-room-overlay">
+                            <p class="trophy-room-caption">Sunrise Setup</p>
                         </div>
-                        <div class="col-12">
-                            <article class="trophy-room-card hover-tilt">
-                                <img src="https://t3.ftcdn.net/jpg/03/68/26/36/360_F_368263684_5FcCp79M4aZtrQlFW7FSQ1AugPKl8Xu3.jpg"
-                                    alt="Fisherman lifting a catch from kayak">
-                                <div class="trophy-room-overlay">
-                                    <p class="trophy-room-caption">Deckside Victory</p>
-                                </div>
-                            </article>
+                    </article>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <article class="trophy-room-card hover-tilt">
+                        <img src="https://t3.ftcdn.net/jpg/03/68/26/36/360_F_368263684_5FcCp79M4aZtrQlFW7FSQ1AugPKl8Xu3.jpg"
+                            alt="Fisherman lifting a catch from kayak">
+                        <div class="trophy-room-overlay">
+                            <p class="trophy-room-caption">Deckside Victory</p>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </div>
@@ -364,7 +361,9 @@
         <div class="container-custom">
             <div class="row">
                 <div class="col-lg-4 mb-5 reveal reveal-up">
-                    <h3 class="text-gradient mb-4 d-flex align-items-center gap-2"><img src="assets/images/bluewake-logo.svg" alt="BlueWake logo" class="brand-logo footer-brand-logo"> <span>BLUEWAKE</span></h3>
+                    <h3 class="mb-4 d-flex align-items-center gap-2"><img src="assets/images/bluewake-logo.svg"
+                            alt="BlueWake logo" class="brand-logo footer-brand-logo"> <span
+                            class="fs-3 fw-bold text-gradient brand-wordmark">BLUEWAKE</span></h3>
                     <p class="text-muted pe-lg-5">Redefining the marine adventure through luxury, technology, and the
                         raw thrill of the hunt. Join the elite.</p>
                     <div class="d-flex gap-3 mt-4">
@@ -421,6 +420,3 @@
 </body>
 
 </html>
-
-
-

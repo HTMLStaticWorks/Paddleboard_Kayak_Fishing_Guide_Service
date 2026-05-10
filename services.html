@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | BlueWake Adventures</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/bluewake-logo.svg">
 
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -51,7 +52,10 @@
     <!-- Offcanvas Menu for Mobile -->
     <div class="offcanvas offcanvas-end glass-panel" tabindex="-1" id="offcanvasNavbar">
         <div class="offcanvas-header border-bottom border-secondary">
-            <h5 class="offcanvas-title text-gradient d-flex align-items-center gap-2 mb-0"><img src="assets/images/bluewake-logo.svg" alt="BlueWake logo" class="brand-logo offcanvas-brand-logo"> <span>BLUEWAKE</span></h5>
+            <h5 class="offcanvas-title text-gradient d-flex align-items-center gap-2 mb-0"><img
+                    src="assets/images/bluewake-logo.svg" alt="BlueWake logo" class="brand-logo offcanvas-brand-logo">
+                <span>BLUEWAKE</span>
+            </h5>
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body d-flex flex-column h-100">
@@ -67,19 +71,19 @@
 
             <div class="mt-auto pt-4 border-top border-secondary">
                 <div class="d-flex align-items-center justify-content-between mb-4">
-                    <span class="small text-muted text-uppercase tracking-widest">Interface</span>
+                    <span class="small text-muted text-uppercase tracking-widest"></span>
                     <div class="d-flex gap-3">
                         <button class="theme-toggle btn btn-link text-white p-0"><i
                                 class="bi bi-moon-stars fs-5"></i></button>
                         <button class="rtl-toggle btn btn-outline-light btn-sm px-3">RTL/LTR</button>
                     </div>
                 </div>
-                <a class="btn btn-accent w-100 rounded-pill" href="login.html">Login Terminal</a>
+                <a class="btn btn-accent w-100 rounded-pill" href="login.html">Login</a>
             </div>
         </div>
     </div>
 
-    <section class="hero-section text-center overflow-hidden">
+    <section class="hero-section services-hero text-center overflow-hidden">
         <img src="assets/images/hero_kayak.png" alt="Premium Charters" class="hero-video-bg">
         <div class="hero-overlay"></div>
         <div class="container-custom z-1">
@@ -87,8 +91,9 @@
             <p class="lead text-white-50 mb-5 mx-auto col-lg-6">Designed for the obsessed. We provide everything but the
                 luck.</p>
             <div class="d-flex flex-wrap justify-content-center gap-3 gap-md-4 reveal reveal-up delay-2 mt-5">
-                <a href="book-now.html" class="btn-marine rounded-pill">Book a Charter</a>
-                <a href="gallery.html" class="btn btn-outline-light rounded-pill d-flex align-items-center gap-2">
+                <a href="book-now.html" class="btn-marine rounded-pill services-hero-cta">Book a Charter</a>
+                <a href="gallery.html"
+                    class="btn btn-outline-light rounded-pill d-flex align-items-center gap-2 services-hero-cta-alt">
                     <i class="bi bi-images fs-4"></i> View Results
                 </a>
             </div>
@@ -130,7 +135,8 @@
                 <div class="col-lg-6 text-center text-lg-start">
                     <div class="ps-lg-5">
                         <h5 class="text-accent mb-3 font-monospace">01 / COASTAL SHADOWS</h5>
-                        <h2 class="display-3 mb-4">Backwater <span class="text-white">Snook.</span></h2>
+                        <h2 class="display-3 mb-4 services-snook-title">Backwater <span class="text-white">Snook.</span>
+                        </h2>
                         <p class="lead text-muted mb-5">Deep immersion into the mangrove labyrinth. We track the
                             lateral-line predators through the tightest channels where motorized boats are forbidden.
                         </p>
@@ -150,7 +156,8 @@
                             </div>
                         </div>
 
-                        <a href="book-now.html" class="btn-marine px-5 py-3">Inquire for Availability</a>
+                        <a href="book-now.html" class="btn-marine px-5 py-3 services-snook-cta">Inquire for
+                            Availability</a>
                     </div>
                 </div>
             </div>
@@ -160,29 +167,33 @@
     <!-- Section 2 -->
     <section class="py-5 bg-card">
         <div class="container-custom py-5">
-            <div class="row align-items-center g-5 flex-row-reverse reveal">
-                <div class="col-lg-6">
-                    <div class="glass-panel p-5 hover-tilt">
+            <div class="row align-items-stretch g-5 flex-row-reverse reveal services-tarpon-row">
+                <div class="col-lg-6 d-flex">
+                    <div class="glass-panel p-5 hover-tilt h-100 w-100 services-tarpon-card">
                         <h4 class="text-accent mb-3">02 / TARPON RUN</h4>
                         <h2>The Silver King</h2>
-                        <p class="text-muted mt-3">Intercept the migration. Heavy tackle kayak fishing where you become
+                        <p class="text-muted mt-2 mb-2 services-tarpon-copy">Intercept the migration. Heavy tackle kayak
+                            fishing where you become
                             the bobber.</p>
                         <ul class="list-unstyled mt-4">
                             <li><i class="bi bi-check text-accent me-2"></i> Seasonal Only (May-July)</li>
                             <li><i class="bi bi-check text-accent me-2"></i> Live Bait Rigging</li>
                         </ul>
+                        <p class="small text-muted mb-0 services-tarpon-extra"><i
+                                class="bi bi-compass text-accent me-2"></i>Prime strike windows: dawn and last light.
+                        </p>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 d-flex">
                     <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=800"
-                        class="img-fluid rounded-5 shadow-lg hover-tilt" alt="Ocean">
+                        class="img-fluid rounded-5 shadow-lg hover-tilt w-100 h-100 services-tarpon-image" alt="Ocean">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Section 3 -->
-    <section class="py-5 mt-5">
+    <section class="py-5 mt-5 services-hardware-section">
         <div class="container-custom reveal">
             <h2 class="text-center mb-5">Base <span class="text-accent">Hardware.</span></h2>
             <div class="scrolling-wrapper">
@@ -207,7 +218,8 @@
     </section>
 
     <!-- Section 4 -->
-    <section class="py-5 text-center mt-5 mb-5 reveal glass-panel mx-auto p-5 hover-tilt" style="max-width:900px;">
+    <section class="py-5 text-center mt-5 mb-5 reveal glass-panel mx-auto p-5 services-quote-section"
+        style="max-width:900px;">
         <h3 class="mb-4">"Hands down the most intense topwater strike I've ever recorded."</h3>
         <p class="text-muted">- Captain Jack, Coastal Weekly</p>
     </section>
@@ -216,7 +228,9 @@
         <div class="container-custom">
             <div class="row">
                 <div class="col-lg-4 mb-5 reveal reveal-up">
-                    <h3 class="text-gradient mb-4 d-flex align-items-center gap-2"><img src="assets/images/bluewake-logo.svg" alt="BlueWake logo" class="brand-logo footer-brand-logo"> <span>BLUEWAKE</span></h3>
+                    <h3 class="mb-4 d-flex align-items-center gap-2"><img src="assets/images/bluewake-logo.svg"
+                            alt="BlueWake logo" class="brand-logo footer-brand-logo"> <span
+                            class="fs-3 fw-bold text-gradient brand-wordmark">BLUEWAKE</span></h3>
                     <p class="text-muted pe-lg-5">Redefining the marine adventure through luxury, technology, and the
                         raw thrill of the hunt. Join the elite.</p>
                     <div class="d-flex gap-3 mt-4">
@@ -273,5 +287,3 @@
 </body>
 
 </html>
-
-

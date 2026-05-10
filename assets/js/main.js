@@ -29,13 +29,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Navbar Scroll Effect
     const navbar = document.querySelector('.navbar-marine');
+    let backToTopBtn = document.querySelector('.back-to-top');
+    if (!backToTopBtn) {
+        backToTopBtn = document.createElement('button');
+        backToTopBtn.type = 'button';
+        backToTopBtn.className = 'back-to-top';
+        backToTopBtn.setAttribute('aria-label', 'Back to top');
+        backToTopBtn.innerHTML = '<i class="bi bi-arrow-up"></i>';
+        document.body.appendChild(backToTopBtn);
+    }
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
+
+        if (backToTopBtn) {
+            backToTopBtn.classList.toggle('show', window.scrollY > 300);
+        }
     });
+
+    if (backToTopBtn) {
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
 
     // 4. Reveal Animations on Scroll (Now instant per request)
     const observerOptions = {
@@ -136,4 +155,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    // 10. Auto-close offcanvas when a nav link is clicked
+    const offcanvasEl = document.getElementById('offcanvasNavbar');
+    if (offcanvasEl) {
+        offcanvasEl.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+                if (bsOffcanvas) bsOffcanvas.hide();
+            });
+        });
+    }
 });
