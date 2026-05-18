@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
     /* Primary Deep Ocean */
@@ -22,8 +22,8 @@
     --accent: hsl(var(--gold-h), var(--gold-s), var(--gold-l));
     --accent-glow: hsla(var(--gold-h), var(--gold-s), var(--gold-l), 0.3);
 
-    --bg-deep: #07121D;
-    --bg-card: rgba(18, 48, 71, 0.4);
+    --bg-deep: #000000;
+    --bg-card: rgba(255, 255, 255, 0.04);
     --text-main: #ffffff;
     --text-muted: rgba(255, 255, 255, 0.7);
     --glass-border: rgba(255, 255, 255, 0.1);
@@ -132,10 +132,35 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1.fw-bold,
+h2.fw-bold,
+h3.fw-bold,
+h4.fw-bold,
+h5.fw-bold,
+h6.fw-bold,
+[class*="display-"] {
     font-family: 'Outfit', sans-serif;
-    font-weight: 800;
+    font-weight: 500 !important;
     letter-spacing: -0.02em;
+}
+
+/* Ensure paragraph and subheading font weights are between 400 and 550 for readability and hierarchy */
+.lead,
+.subheading,
+.subtitle,
+p.fw-bold,
+.lead.fw-bold,
+.small.fw-bold,
+span.fw-bold.small,
+div.fw-bold.small {
+    font-weight: 500 !important;
 }
 
 .brand-logo {
@@ -250,6 +275,10 @@ h6 {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .btn-marine:hover {
@@ -321,13 +350,25 @@ h6 {
     width: 100%;
 }
 
-.navbar-marine .btn-accent,
+.navbar-marine .btn-accent {
+    border: 1px solid transparent;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .offcanvas .btn-accent {
     border: 1px solid transparent;
 }
 
 .navbar-marine .btn-accent:hover,
-.navbar-marine .btn-accent:focus-visible,
+.navbar-marine .btn-accent:focus-visible {
+    background: #ffffff;
+    color: var(--primary) !important;
+    border-color: var(--accent);
+}
+
 .offcanvas .btn-accent:hover,
 .offcanvas .btn-accent:focus-visible {
     background: #ffffff;
@@ -393,6 +434,21 @@ h6 {
     overflow: hidden;
     padding-top: 80px;
     padding-bottom: 30px;
+}
+
+.hero-section .btn-outline-light,
+[data-theme="light"] .hero-section .btn-outline-light {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(5px);
+}
+
+.hero-section .btn-outline-light:hover,
+[data-theme="light"] .hero-section .btn-outline-light:hover {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
 }
 
 @media (max-width: 768px) {
@@ -871,7 +927,7 @@ footer .list-unstyled a.text-muted:focus-visible {
 .parallax-bg .text-muted,
 .hero-section .text-white-50,
 .parallax-bg .text-white-50 {
-    font-weight: 700 !important;
+    font-weight: 500 !important;
     color: #ffffff !important;
 }
 
@@ -1094,4 +1150,253 @@ h6 {
 
 .bg-tropical {
     background: linear-gradient(135deg, #07121D 0%, #051a1a 100%);
+}
+
+/* Dark Mode Section Backgrounds (Alternate Black and Dark Grey) */
+[data-theme="dark"] body,
+html:not([data-theme="light"]) body {
+    background-color: #000000;
+}
+
+[data-theme="dark"] .bg-conservation,
+[data-theme="dark"] .bg-elite,
+[data-theme="dark"] .bg-tropical,
+[data-theme="dark"] .bg-deep,
+html:not([data-theme="light"]) .bg-conservation,
+html:not([data-theme="light"]) .bg-elite,
+html:not([data-theme="light"]) .bg-tropical,
+html:not([data-theme="light"]) .bg-deep {
+    background: #000000 !important;
+}
+
+[data-theme="dark"] .bg-card,
+[data-theme="dark"] .bg-marine-alt,
+[data-theme="dark"] .bg-tech,
+[data-theme="dark"] .bg-stealth,
+html:not([data-theme="light"]) .bg-card,
+html:not([data-theme="light"]) .bg-marine-alt,
+html:not([data-theme="light"]) .bg-tech,
+html:not([data-theme="light"]) .bg-stealth {
+    background: #121212 !important;
+}
+
+[data-theme="dark"] footer,
+html:not([data-theme="light"]) footer {
+    background: #121212 !important;
+}
+
+/* Light Mode Section Backgrounds (White and Light Grey Alternate) */
+[data-theme="light"] body {
+    background-color: #f8fafc !important;
+}
+
+[data-theme="light"] .bg-conservation,
+[data-theme="light"] .bg-elite,
+[data-theme="light"] .bg-tropical,
+[data-theme="light"] .bg-deep {
+    background: #ffffff !important;
+    color: #0f172a !important;
+}
+
+[data-theme="light"] .bg-card,
+[data-theme="light"] .bg-marine-alt,
+[data-theme="light"] .bg-tech,
+[data-theme="light"] .bg-stealth {
+    background: #f1f5f9 !important;
+    color: #0f172a !important;
+}
+
+[data-theme="light"] footer {
+    background: #f1f5f9 !important;
+    color: #0f172a !important;
+}
+
+/* Force dark text for readability in light mode sections */
+[data-theme="light"] .bg-conservation,
+[data-theme="light"] .bg-elite,
+[data-theme="light"] .bg-tropical,
+[data-theme="light"] .bg-deep,
+[data-theme="light"] .bg-card,
+[data-theme="light"] .bg-marine-alt,
+[data-theme="light"] .bg-tech,
+[data-theme="light"] .bg-stealth {
+    color: #334155 !important;
+}
+
+[data-theme="light"] .bg-conservation h1,
+[data-theme="light"] .bg-conservation h2,
+[data-theme="light"] .bg-conservation h3,
+[data-theme="light"] .bg-conservation h4,
+[data-theme="light"] .bg-conservation h5,
+[data-theme="light"] .bg-conservation h6,
+[data-theme="light"] .bg-conservation .display-1,
+[data-theme="light"] .bg-conservation .display-2,
+[data-theme="light"] .bg-conservation .display-3,
+[data-theme="light"] .bg-conservation .display-4,
+[data-theme="light"] .bg-conservation .display-5,
+[data-theme="light"] .bg-conservation .display-6,
+[data-theme="light"] .bg-conservation p,
+[data-theme="light"] .bg-conservation .text-white,
+[data-theme="light"] .bg-conservation .text-white-50,
+[data-theme="light"] .bg-elite h1,
+[data-theme="light"] .bg-elite h2,
+[data-theme="light"] .bg-elite h3,
+[data-theme="light"] .bg-elite h4,
+[data-theme="light"] .bg-elite h5,
+[data-theme="light"] .bg-elite h6,
+[data-theme="light"] .bg-elite .display-1,
+[data-theme="light"] .bg-elite .display-2,
+[data-theme="light"] .bg-elite .display-3,
+[data-theme="light"] .bg-elite .display-4,
+[data-theme="light"] .bg-elite .display-5,
+[data-theme="light"] .bg-elite .display-6,
+[data-theme="light"] .bg-elite p,
+[data-theme="light"] .bg-elite .text-white,
+[data-theme="light"] .bg-elite .text-white-50,
+[data-theme="light"] .bg-tropical h1,
+[data-theme="light"] .bg-tropical h2,
+[data-theme="light"] .bg-tropical h3,
+[data-theme="light"] .bg-tropical h4,
+[data-theme="light"] .bg-tropical h5,
+[data-theme="light"] .bg-tropical h6,
+[data-theme="light"] .bg-tropical .display-1,
+[data-theme="light"] .bg-tropical .display-2,
+[data-theme="light"] .bg-tropical .display-3,
+[data-theme="light"] .bg-tropical .display-4,
+[data-theme="light"] .bg-tropical .display-5,
+[data-theme="light"] .bg-tropical .display-6,
+[data-theme="light"] .bg-tropical p,
+[data-theme="light"] .bg-tropical .text-white,
+[data-theme="light"] .bg-tropical .text-white-50,
+[data-theme="light"] .bg-deep h1,
+[data-theme="light"] .bg-deep h2,
+[data-theme="light"] .bg-deep h3,
+[data-theme="light"] .bg-deep h4,
+[data-theme="light"] .bg-deep h5,
+[data-theme="light"] .bg-deep h6,
+[data-theme="light"] .bg-deep .display-1,
+[data-theme="light"] .bg-deep .display-2,
+[data-theme="light"] .bg-deep .display-3,
+[data-theme="light"] .bg-deep .display-4,
+[data-theme="light"] .bg-deep .display-5,
+[data-theme="light"] .bg-deep .display-6,
+[data-theme="light"] .bg-deep p,
+[data-theme="light"] .bg-deep .text-white,
+[data-theme="light"] .bg-deep .text-white-50,
+[data-theme="light"] .bg-card h1,
+[data-theme="light"] .bg-card h2,
+[data-theme="light"] .bg-card h3,
+[data-theme="light"] .bg-card h4,
+[data-theme="light"] .bg-card h5,
+[data-theme="light"] .bg-card h6,
+[data-theme="light"] .bg-card .display-1,
+[data-theme="light"] .bg-card .display-2,
+[data-theme="light"] .bg-card .display-3,
+[data-theme="light"] .bg-card .display-4,
+[data-theme="light"] .bg-card .display-5,
+[data-theme="light"] .bg-card .display-6,
+[data-theme="light"] .bg-card p,
+[data-theme="light"] .bg-card .text-white,
+[data-theme="light"] .bg-card .text-white-50,
+[data-theme="light"] .bg-marine-alt h1,
+[data-theme="light"] .bg-marine-alt h2,
+[data-theme="light"] .bg-marine-alt h3,
+[data-theme="light"] .bg-marine-alt h4,
+[data-theme="light"] .bg-marine-alt h5,
+[data-theme="light"] .bg-marine-alt h6,
+[data-theme="light"] .bg-marine-alt .display-1,
+[data-theme="light"] .bg-marine-alt .display-2,
+[data-theme="light"] .bg-marine-alt .display-3,
+[data-theme="light"] .bg-marine-alt .display-4,
+[data-theme="light"] .bg-marine-alt .display-5,
+[data-theme="light"] .bg-marine-alt .display-6,
+[data-theme="light"] .bg-marine-alt p,
+[data-theme="light"] .bg-marine-alt .text-white,
+[data-theme="light"] .bg-marine-alt .text-white-50,
+[data-theme="light"] .bg-tech h1,
+[data-theme="light"] .bg-tech h2,
+[data-theme="light"] .bg-tech h3,
+[data-theme="light"] .bg-tech h4,
+[data-theme="light"] .bg-tech h5,
+[data-theme="light"] .bg-tech h6,
+[data-theme="light"] .bg-tech .display-1,
+[data-theme="light"] .bg-tech .display-2,
+[data-theme="light"] .bg-tech .display-3,
+[data-theme="light"] .bg-tech .display-4,
+[data-theme="light"] .bg-tech .display-5,
+[data-theme="light"] .bg-tech .display-6,
+[data-theme="light"] .bg-tech p,
+[data-theme="light"] .bg-tech .text-white,
+[data-theme="light"] .bg-tech .text-white-50,
+[data-theme="light"] .bg-stealth h1,
+[data-theme="light"] .bg-stealth h2,
+[data-theme="light"] .bg-stealth h3,
+[data-theme="light"] .bg-stealth h4,
+[data-theme="light"] .bg-stealth h5,
+[data-theme="light"] .bg-stealth h6,
+[data-theme="light"] .bg-stealth .display-1,
+[data-theme="light"] .bg-stealth .display-2,
+[data-theme="light"] .bg-stealth .display-3,
+[data-theme="light"] .bg-stealth .display-4,
+[data-theme="light"] .bg-stealth .display-5,
+[data-theme="light"] .bg-stealth .display-6,
+[data-theme="light"] .bg-stealth p,
+[data-theme="light"] .bg-stealth .text-white,
+[data-theme="light"] .bg-stealth .text-white-50 {
+    color: #0f172a !important;
+}
+
+[data-theme="light"] .bg-conservation .text-muted,
+[data-theme="light"] .bg-elite .text-muted,
+[data-theme="light"] .bg-tropical .text-muted,
+[data-theme="light"] .bg-deep .text-muted,
+[data-theme="light"] .bg-card .text-muted,
+[data-theme="light"] .bg-marine-alt .text-muted,
+[data-theme="light"] .bg-tech .text-muted,
+[data-theme="light"] .bg-stealth .text-muted {
+    color: #475569 !important;
+}
+
+[data-theme="light"] .trophy-room-caption {
+    color: #0f172a !important;
+}
+
+/* Footer email input and placeholder visibility in dark mode */
+html:not([data-theme="light"]) footer input[type="email"].form-control,
+html:not([data-theme="light"]) footer input[type="email"].form-control::placeholder {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* Safety Protocols Card in book-now.html light mode */
+[data-theme="light"] .bg-tech .bg-dark {
+    background-color: #ffffff !important;
+}
+
+[data-theme="light"] .bg-tech .bg-dark .weather-safety-title {
+    color: #0f172a !important;
+}
+
+[data-theme="light"] .bg-tech .bg-dark p {
+    color: #475569 !important;
+}
+
+[data-theme="light"] .bg-tech .bg-dark .tech-glitch {
+    color: #0f172a !important;
+}
+
+/* Standardize Corner Radius for All Buttons, Containers, and Inputs */
+.btn,
+.btn-marine,
+.btn-outline-light,
+.btn-accent,
+.form-control,
+.glass-panel,
+.trip-card,
+.contact-card,
+.gallery-img,
+.rounded-4,
+.rounded-5,
+.rounded-pill {
+    border-radius: 24px !important;
 }

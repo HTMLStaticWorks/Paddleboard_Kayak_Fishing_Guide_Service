@@ -1,4 +1,4 @@
-﻿$cssAppend = @"
+$cssAppend = @"
 
 /* Premium Animations & Layouts */
 .parallax-bg {
@@ -90,15 +90,21 @@ $contentHome2 = @"
             <div class="row align-items-center g-5">
                 <div class="col-lg-6 reveal">
                     <h2 class="display-3 mb-4">Master The <span class="text-accent">Currents.</span></h2>
-                    <p class="text-muted lead">Alternative home portal. A more streamlined, aggressive approach to ocean navigation.</p>
+                    <p class="text-muted lead mb-3">Master the rhythm of tide windows, wind shifts, and submerged
+                        structure with a route plan built for precision. Our guides map current lanes in real time so
+                        every drift, cast angle, and reposition serves a clear purpose on the water.</p>
+                    <p class="text-muted lead mb-0">From launch timing to final retrieval, we combine local knowledge,
+                        sonar feedback, and stealth movement to keep you one step ahead of feeding patterns and
+                        changing conditions.</p>
                 </div>
-                <div class="col-lg-6 reveal">
-                    <img src="https://images.unsplash.com/photo-1544239649-403926830c2c?q=80&w=800" class="img-fluid rounded-5 shadow-2-strong hover-tilt" alt="Currents">
+                <div class="col-lg-6">
+                    <img src="assets/images/currents.png" class="img-fluid rounded-5 shadow-2-strong hover-tilt"
+                        alt="Master The Currents">
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- Section 2 -->
     <section class="py-5 bg-card">
         <div class="container-custom py-5 text-center reveal">
@@ -146,18 +152,80 @@ $contentHome2 = @"
                     <p class="text-muted">Secret Spots</p>
                 </div>
                 <div class="col-6 col-md-3">
-                    <h2 class="display-3 fw-bold text-accent"></h2>
-                    <p class="text-muted">Adrenaline</p>
+                    <h2 class="display-3 fw-bold text-accent counter" data-target="100">0</h2>
+                    <p class="text-muted">Adrenaline %</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 4 -->
-    <section class="py-5 mb-5 text-center">
-        <div class="glass-panel mx-auto p-5 hover-tilt reveal" style="max-width: 800px;">
-            <h2>The Ocean simplified.</h2>
-            <a href="book-now.html" class="btn-marine px-5 py-3 mt-4">Secure Your Spot</a>
+    <!-- Section 4: Stealth Operations -->
+    <section class="section-padding bg-stealth stealth-overlay">
+        <div class="container-custom">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h5 class="text-accent mb-3 text-uppercase">Silent Predator</h5>
+                    <h2 class="display-3 mb-4">Master The <span class="text-white">Art of Stealth.</span></h2>
+                    <p class="lead text-muted mb-3">Our specialized black-water kayaks are tuned for whisper-quiet
+                        entry, letting you slide into strike zones without alerting pressured fish. Low-signature hulls,
+                        noise-dampened rigging, and disciplined positioning keep every movement controlled and unseen.
+                    </p>
+                    <p class="lead text-muted mb-4">With guided approach lanes, shadow-line tracking, and precision
+                        casting setups, you can close distance safely and execute clean presentations where motorized
+                        crews simply cannot reach.</p>
+                    <a href="services.html" class="btn-marine">The Stealth Protocol</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/images/stealth.png" class="img-fluid rounded-5 shadow-lg tech-glitch"
+                        alt="Stealth Kayak">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Tropical Expeditions -->
+    <section class="section-padding bg-tropical">
+        <div class="container-custom">
+            <div class="row align-items-center g-5 flex-row-reverse">
+                <div class="col-lg-7">
+                    <h5 class="text-accent mb-3 text-uppercase">Exclusive Access</h5>
+                    <h2 class="display-3 mb-4">Tropical <span class="text-white">Escapism.</span></h2>
+                    <p class="lead text-muted mb-3">From hidden lagoons in Cabo to crystal flats in the Keys, each
+                        destination is selected for consistent action, clean water access, and unforgettable scenery.
+                        We handle route planning, launch logistics, and premium tackle so your focus stays on the hunt.
+                    </p>
+                    <p class="lead text-muted mb-4">Expect curated daily windows based on weather and tide intelligence,
+                        guided movement between productive zones, and local insight that turns unfamiliar coastlines
+                        into repeatable, high-confidence expedition water.</p>
+                    <div class="d-flex gap-4">
+                        <div class="text-center">
+                            <i class="bi bi-geo-alt text-accent fs-2"></i>
+                            <div class="small fw-bold mt-2">12 LOCATIONS</div>
+                        </div>
+                        <div class="text-center ms-4">
+                            <i class="bi bi-thermometer-sun text-accent fs-2"></i>
+                            <div class="small fw-bold mt-2">YEAR ROUND</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="overflow-hidden shadow-lg rounded-5 hover-tilt border border-secondary border-opacity-25" style="max-width: 480px; margin: 0 auto;">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800"
+                            class="img-fluid w-100" style="object-fit: cover; aspect-ratio: 4/3; height: 380px;" alt="Tropical Lagoon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="py-5 bg-card">
+        <div class="container-custom py-5 text-center">
+            <div class="glass-panel mx-auto p-4 p-md-5" style="max-width: 800px;">
+                <h2 class="display-4">The Ocean <span class="text-accent">Simplified.</span></h2>
+                <p class="text-muted mb-4">Elite gear. Expert guides. Zero noise.</p>
+                <a href="book-now.html" class="btn-marine px-4 px-md-5 py-3">Secure Your Spot</a>
+            </div>
         </div>
     </section>
 "@
@@ -256,45 +324,145 @@ Build-Page "book-now.html" "Book Now" "https://images.unsplash.com/photo-1510006
 
 # --- SERVICES ---
 $contentServices = @"
-    <!-- Section 1 -->
-    <section class="py-5 mb-5">
-        <div class="container-custom py-5">
-            <div class="row align-items-center g-5 reveal">
+    <!-- Service 1: Backwater Snook -->
+    <section class="section-padding overflow-hidden">
+        <div class="container-custom">
+            <div class="row align-items-center g-5">
                 <div class="col-lg-6">
-                    <div class="glass-panel p-5 hover-tilt border-accent">
-                        <h4 class="text-accent mb-3">01 / BACKWATER SNOOK</h4>
-                        <h2>The Mangrove Maze</h2>
-                        <p class="text-muted mt-3">8-hour intense precision casting deep in the mangrove root systems. Requires high skill and absolute silence.</p>
-                        <ul class="list-unstyled mt-4">
-                            <li><i class="bi bi-check text-accent me-2"></i> Intermediate to Expert</li>
-                            <li><i class="bi bi-check text-accent me-2"></i> Artificial Lure Only</li>
-                        </ul>
+                    <div class="overflow-hidden shadow-lg rounded-5 hover-tilt border border-secondary border-opacity-25">
+                        <img src="https://s7d6.scene7.com/is/image/DSGAEMSites/Dec_Batch1_Article04_skills+paddle+carrying+canoes+and+kayaks+-draft_1:ImageList"
+                            class="img-fluid w-100" style="object-fit: cover; aspect-ratio: 4/3; height: 380px;" alt="Mangrove Snook Habitat">
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1544526226-d4568090ffb8?q=80&w=800" class="img-fluid rounded-5 shadow-lg hover-tilt" alt="Mangrove">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="ps-lg-4">
+                        <h5 class="text-accent mb-3 font-monospace text-uppercase tracking-widest fs-6">01 / Coastal Shadows</h5>
+                        <h2 class="display-4 mb-3 fw-bold">Backwater Snook</h2>
+                        <p class="lead text-muted mb-4">Deep immersion into the mangrove labyrinth. We track the lateral-line predators through the tightest channels where motorized boats are strictly forbidden.</p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-6">
+                                <div class="glass-panel p-3 text-center h-100" style="background: rgba(255,255,255,0.02);">
+                                    <div class="fs-4 fw-bold text-accent">8H</div>
+                                    <div class="small text-muted text-uppercase mt-1 font-monospace">Duration</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="glass-panel p-3 text-center h-100 border-accent" style="background: rgba(255,255,255,0.02);">
+                                    <div class="fs-4 fw-bold text-accent">$450</div>
+                                    <div class="small text-muted text-uppercase mt-1 font-monospace">Per Seat</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="book-now.html" class="btn-marine px-5 py-3">Inquire for Availability</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 2 -->
-    <section class="py-5 bg-card">
-        <div class="container-custom py-5">
-            <div class="row align-items-center g-5 flex-row-reverse reveal">
+    <!-- Service 2: The Silver King -->
+    <section class="section-padding bg-card overflow-hidden">
+        <div class="container-custom">
+            <div class="row align-items-center g-5 flex-row-reverse">
                 <div class="col-lg-6">
-                    <div class="glass-panel p-5 hover-tilt">
-                        <h4 class="text-accent mb-3">02 / TARPON RUN</h4>
-                        <h2>The Silver King</h2>
-                        <p class="text-muted mt-3">Intercept the migration. Heavy tackle kayak fishing where you become the bobber.</p>
-                        <ul class="list-unstyled mt-4">
-                            <li><i class="bi bi-check text-accent me-2"></i> Seasonal Only (May-July)</li>
-                            <li><i class="bi bi-check text-accent me-2"></i> Live Bait Rigging</li>
-                        </ul>
+                    <div class="overflow-hidden shadow-lg rounded-5 hover-tilt border border-secondary border-opacity-25">
+                        <img src="https://images.unsplash.com/photo-1517462964-21fdcec3f25b?q=80&w=800"
+                            class="img-fluid w-100" style="object-fit: cover; aspect-ratio: 4/3; height: 380px;" alt="Tarpon Fishing">
                     </div>
                 </div>
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="pe-lg-4">
+                        <h5 class="text-accent mb-3 font-monospace text-uppercase tracking-widest fs-6">02 / Open Flats</h5>
+                        <h2 class="display-4 mb-3 fw-bold">The Silver King</h2>
+                        <p class="lead text-muted mb-4">Intercept the major coastal tarpon migrations. Experience heavy-tackle sight-casting on the pristine shallow flats where you become the bobber.</p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-6">
+                                <div class="glass-panel p-3 text-center h-100" style="background: rgba(255,255,255,0.02);">
+                                    <div class="fs-4 fw-bold text-accent">6H</div>
+                                    <div class="small text-muted text-uppercase mt-1 font-monospace">Duration</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="glass-panel p-3 text-center h-100 border-accent" style="background: rgba(255,255,255,0.02);">
+                                    <div class="fs-4 fw-bold text-accent">$380</div>
+                                    <div class="small text-muted text-uppercase mt-1 font-monospace">Per Seat</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="book-now.html" class="btn-marine px-5 py-3">Inquire for Availability</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 3: Nearshore Reefs -->
+    <section class="section-padding overflow-hidden">
+        <div class="container-custom">
+            <div class="row align-items-center g-5">
                 <div class="col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=800" class="img-fluid rounded-5 shadow-lg hover-tilt" alt="Ocean">
+                    <div class="overflow-hidden shadow-lg rounded-5 hover-tilt border border-secondary border-opacity-25">
+                        <img src="https://images.unsplash.com/photo-1544239649-403926830c2c?q=80&w=800"
+                            class="img-fluid w-100" style="object-fit: cover; aspect-ratio: 4/3; height: 380px;" alt="Nearshore Reefs">
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="ps-lg-4">
+                        <h5 class="text-accent mb-3 font-monospace text-uppercase tracking-widest fs-6">03 / Deep Blue Stealth</h5>
+                        <h2 class="display-4 mb-3 fw-bold">Nearshore Reefs</h2>
+                        <p class="lead text-muted mb-4">Target snapper, grouper, and cobia over close-in reef structures. Absolute stealth lets us paddle directly over active wrecks without spooking school leaders.</p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-6">
+                                <div class="glass-panel p-3 text-center h-100" style="background: rgba(255,255,255,0.02);">
+                                    <div class="fs-4 fw-bold text-accent">5H</div>
+                                    <div class="small text-muted text-uppercase mt-1 font-monospace">Duration</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="glass-panel p-3 text-center h-100 border-accent" style="background: rgba(255,255,255,0.02);">
+                                    <div class="fs-4 fw-bold text-accent">$320</div>
+                                    <div class="small text-muted text-uppercase mt-1 font-monospace">Per Seat</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="book-now.html" class="btn-marine px-5 py-3">Inquire for Availability</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service 4: Midnight Hunt -->
+    <section class="section-padding bg-card overflow-hidden">
+        <div class="container-custom">
+            <div class="row align-items-center g-5 flex-row-reverse">
+                <div class="col-lg-6">
+                    <div class="overflow-hidden shadow-lg rounded-5 hover-tilt border border-secondary border-opacity-25">
+                        <img src="https://images.unsplash.com/photo-1493630656093-4e3ad03c7349?q=80&w=800"
+                            class="img-fluid w-100" style="object-fit: cover; aspect-ratio: 4/3; height: 380px;" alt="Night Fishing">
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-start">
+                    <div class="pe-lg-4">
+                        <h5 class="text-accent mb-3 font-monospace text-uppercase tracking-widest fs-6">04 / Night Operations</h5>
+                        <h2 class="display-4 mb-3 fw-bold">Midnight Hunt</h2>
+                        <p class="lead text-muted mb-4">Equipped with sub-surface green LEDs and silent navigation, we track nocturnal tarpon and giant snook feeding under private dock lights and bridge fenders.</p>
+                        <div class="row g-3 mb-4">
+                            <div class="col-6">
+                                <div class="glass-panel p-3 text-center h-100" style="background: rgba(255,255,255,0.02);">
+                                    <div class="fs-4 fw-bold text-accent">4H</div>
+                                    <div class="small text-muted text-uppercase mt-1 font-monospace">Duration</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="glass-panel p-3 text-center h-100 border-accent" style="background: rgba(255,255,255,0.02);">
+                                    <div class="fs-4 fw-bold text-accent">$290</div>
+                                    <div class="small text-muted text-uppercase mt-1 font-monospace">Per Seat</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="book-now.html" class="btn-marine px-5 py-3">Inquire for Availability</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -416,26 +584,60 @@ $contentAbout = @"
         </div>
     </section>
 
-    <!-- Section 2 -->
-    <section class="py-5 bg-card mt-5">
-        <div class="container-custom py-5 reveal">
-            <h2 class="text-center mb-5">The <span class="text-accent">Guides.</span></h2>
+    <!-- Section 2: Certified Guides -->
+    <section class="py-4 bg-card mt-5 about-guides-section">
+        <div class="container-custom py-4 reveal">
+            <div class="text-center mb-5">
+                <h3 class="text-accent font-monospace mb-2 text-uppercase tracking-widest fw-bold fs-3">Meet the Elite Team</h3>
+                <h2 class="display-4 text-center">The Certified <span class="text-accent">Guides.</span></h2>
+                <p class="text-muted mx-auto col-lg-6 mt-3">Our master guides combine decades of local water wisdom with active marine stewardship credentials.</p>
+            </div>
+            
             <div class="row g-4 justify-content-center">
-                <div class="col-md-5 hover-tilt">
-                    <div class="glass-panel d-flex align-items-center p-4 h-100">
-                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=100&h=100&fit=crop" class="rounded-circle shadow-lg me-4 border border-accent p-1">
-                        <div>
-                            <h4>Capt. Miller</h4>
-                            <p class="text-accent small mb-0">Lead Saltwater Guide</p>
+                <div class="col-md-6 col-lg-5 hover-tilt">
+                    <div class="glass-panel p-4 h-100 d-flex flex-column justify-content-between border-accent" style="background: rgba(255, 255, 255, 0.02);">
+                        <div class="d-flex align-items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=120&h=120&fit=crop"
+                                class="rounded-circle shadow-lg me-4 border border-accent p-1" style="width: 80px; height: 80px; object-fit: cover;" alt="Capt. Miller">
+                            <div>
+                                <h3 class="text-white mb-1">Capt. Miller</h3>
+                                <p class="text-accent small mb-0 font-monospace text-uppercase">Lead Saltwater Guide</p>
+                            </div>
+                        </div>
+                        <div class="border-top border-secondary border-opacity-25 pt-3">
+                            <div class="d-flex justify-content-between mb-2 small text-muted">
+                                <span>Specialty:</span>
+                                <span class="text-white fw-bold">Mangrove Maze & Flats</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3 small text-muted">
+                                <span>Credentials:</span>
+                                <span class="text-white fw-bold">12+ Yrs / USCG Master</span>
+                            </div>
+                            <p class="text-muted small mb-0">"Lifelong coastal angler dedicated to silent shallow-water tracking and marine habitat conservation."</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 hover-tilt">
-                    <div class="glass-panel d-flex align-items-center p-4 h-100 border-accent">
-                        <img src="https://images.unsplash.com/photo-1544526226-d4568090ffb8?w=100&h=100&fit=crop" class="rounded-circle shadow-lg me-4 border border-white p-1">
-                        <div>
-                            <h4>Capt. Davis</h4>
-                            <p class="text-accent small mb-0">Fly Fishing Specialist</p>
+                
+                <div class="col-md-6 col-lg-5 hover-tilt">
+                    <div class="glass-panel p-4 h-100 d-flex flex-column justify-content-between border-accent" style="background: rgba(255, 255, 255, 0.02);">
+                        <div class="d-flex align-items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&h=120&fit=crop"
+                                class="rounded-circle shadow-lg me-4 border border-white p-1" style="width: 80px; height: 80px; object-fit: cover;" alt="Capt. Davis">
+                            <div>
+                                <h3 class="text-white mb-1">Capt. Davis</h3>
+                                <p class="text-accent small mb-0 font-monospace text-uppercase">Fly Fishing Specialist</p>
+                            </div>
+                        </div>
+                        <div class="border-top border-secondary border-opacity-25 pt-3">
+                            <div class="d-flex justify-content-between mb-2 small text-muted">
+                                <span>Specialty:</span>
+                                <span class="text-white fw-bold">Sight Casting & Fly Tying</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-3 small text-muted">
+                                <span>Credentials:</span>
+                                <span class="text-white fw-bold">8+ Yrs / Fly Federation</span>
+                            </div>
+                            <p class="text-muted small mb-0">"Master fly tier specializing in absolute stealth presentations for easily-spooked backcountry game."</p>
                         </div>
                     </div>
                 </div>
